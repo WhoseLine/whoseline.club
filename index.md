@@ -1,5 +1,8 @@
 ---
+
 title: Welcome!
+layout: default
+
 ---
 
 
