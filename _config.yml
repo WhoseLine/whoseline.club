@@ -29,7 +29,7 @@ baseurl: ""
 
 markdown: kramdown
 permalink: /:year/:month/:day/
-highlighter: pygments
+highlighter: rouge
 
 paginate: 10
 paginate_path: "/page/:num"
