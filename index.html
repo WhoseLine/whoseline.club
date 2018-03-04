@@ -7,7 +7,7 @@ title: Homepage
 <p align="center"><iframe src="https://player.twitch.tv/?autoplay=false&#038;muted=false&#038;channel=whoselineclub" width="620" height="378" frameborder="0" scrolling="no" allowfullscreen></iframe></p>
 <div id="home">
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
       <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
         <div class="p-wrap">
