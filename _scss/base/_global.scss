@@ -90,6 +90,10 @@ a {
     color: $text-color;
   }
 }
+.discord {
+    float: right;
+    text-decoration: none;
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
