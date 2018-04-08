@@ -4,12 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      <title>{% if page.layout == 'post' %} {{ page.date | date_to_long_string }} - {% endif %}{{ site.name }}{% if page.layout == 'post' %} - {{ site.description }}{% endif %}</title>
+      <title>{% if page.layout == 'post' %} {{ page.date | date_to_long_string }} - {% endif %}{{ site.name }}{% if page.layout != 'post' %} - {{ site.description }}{% endif %}</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta http-equiv="content-language" content="en-us" />
-      <meta name="description" content="{{ page.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncatewords: 50 }}">
+      <meta name="description" content="{% if page.layout == 'post' %}{{ page.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncatewords: 50 }}{% endif %}{% if page.layout != 'post' %}{{ site.description }}{% endif %}">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta property="og:title" content="{% if page.layout == 'post' %} {{ page.date | date_to_long_string }} {{page.title}}{% endif %}{% if page.layout == 'post' %}{{ site.name }} - {{ site.description }}{% endif %}">
+      <meta property="og:description" content="{% if page.layout == 'post' %}{{ page.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncatewords: 50 }}{% endif %}{% if page.layout != 'post' %}{{ site.description }}{% endif %}">
+      <meta property="og:image" content="https://static-cdn.jtvnw.net/jtv_user_pictures/238c10fbe4a00331-channel_offline_image-1920x1080.jpeg">
+      <meta property="og:url" content="{{site.url}}{{page.url}}">
       <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
       <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
