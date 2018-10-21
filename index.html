@@ -2,9 +2,11 @@
 layout: default
 title: Homepage
 ---
+{% if paginator.page == 1 %}
 <p align="center">
 <div class="videoWrapper twitch"><iframe src="https://player.twitch.tv/?autoplay=false&#038;muted=false&#038;channel=whoselineclub" width="620" height="378" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
 </p>
+{% endif %}
 <h1 align="center">Past Streams</h1>
 <div id="home">
   <ul class="posts">
