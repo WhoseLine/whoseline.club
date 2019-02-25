@@ -82,6 +82,10 @@ small {
 }
 
 ul li { list-style-type: circle; }
+ul li ul li { 
+  list-style-type: disc;
+  margin-left: 1em;
+}
 ol li { list-style-type: decimal; }
 
 a { 
