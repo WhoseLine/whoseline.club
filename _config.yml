@@ -28,7 +28,7 @@ baseurl: ""
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
 markdown: kramdown
-permalink: /:year/:month/:day/
+permalink: /:categories/:year/:month/:day/
 #highlighter: pygments
 
 paginate: 5
