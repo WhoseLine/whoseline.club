@@ -1,5 +1,5 @@
 # Title of your blog; shows in the header
-name: "WhoseLine.club"
+name: "Whose Line Club"
 
 # Description of your content (will only be used on Google Search)
 description: "An online improv club based off the popular TV show 'Whose Line Is It Anyway?'"
@@ -7,7 +7,7 @@ description: "An online improv club based off the popular TV show 'Whose Line Is
 # Your name. Will show in your footer + sidebar
 #author: "@meanelephant"
 
-url: "http://whoseline.club"
+url: "https://whoseline.club"
 baseurl: ""
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
