@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: whoseline.club 
+Token: 585615148f3cc9ab913a2219e1ea72eab08321fb47cb1cb4484ed7729e8d16e6
