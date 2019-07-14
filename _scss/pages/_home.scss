@@ -32,6 +32,12 @@
           }
         }
       }
+      .highlight-video {
+        background: $brand-color;
+        &:hover{
+          background: lighten($brand-color, 3%)
+        }
+      }
       @media (max-width: 942px) {
         padding: $spacing-m $spacing-m;
       }

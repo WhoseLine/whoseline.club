@@ -16,7 +16,7 @@ redirect_from: "/page/1"
     {% for post in paginator.posts %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
       <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-        <div class="p-wrap">
+        <div class="p-wrap{%- for cat in post.categories -%} {{ cat }}{%- endfor -%}">
           <article class="inner">
             <time datetime="{{ post.date | date_to_xmlschema }}"
                 itemprop="datePublished">
