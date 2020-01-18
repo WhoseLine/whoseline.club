@@ -1,4 +1,5 @@
 ---
+layout: post
 permalink: /oscars/
 title: "YouTube Oscar Nominations: 2020"
 ---
