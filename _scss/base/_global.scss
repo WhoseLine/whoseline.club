@@ -103,23 +103,27 @@ a {
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
+	
+	iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
 }
 .videoWrapper.twitch {
   margin: -8% 0%;
+	iframe {
+	  position: absolute;
+	  top: 25%;
+	  left: 25%;
+	  width: 50%;
+	  height: 50%;
+	}
 }
-
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.videoWrapper.twitch iframe {
-	position: absolute;
-	top: 25%;
-	left: 25%;
-	width: 50%;
-	height: 50%;
+form > input, select, button {
+    width: 100%;
+    display: block;
 }
 
