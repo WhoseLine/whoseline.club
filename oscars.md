@@ -9,7 +9,8 @@ title: "YouTube Oscar Nominations: 2020"
   <select name="category">
     <option value="Overall">Best Overall Video</option>
     <option value="Educational">Best Educational Video</option>
-    <option value="Comedy">Best Music Video</option>
+    <option value="Comedy">Best Comedy Video</option>
+    <option value="Music">Best Music Video</option>
     <option value="Art">Best Art Video</option>
     <option value="Remix/Edit">Best Remix/Edit</option>
   </select>
